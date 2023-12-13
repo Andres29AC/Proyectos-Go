@@ -15,3 +15,4 @@ func ParseBody(r *http.Request, x interface{}){
 	}
 
 }
+//NOTE: .Unmarshal() sirve para convertir un objeto JSON en un objeto Go 

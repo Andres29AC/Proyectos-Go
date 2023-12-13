@@ -5,7 +5,7 @@ import(
   _ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
-// El caracter _ significa que se esta importando el paquete solo para sus
+//NOTE: El caracter _ significa que se esta importando el paquete solo para sus
 // efectos secundarios, en lugar de para su uso directo. En este caso, se
 // esta importando el controlador "mysql" para Gorm, pero no se usara
 // directamente en el codigo.

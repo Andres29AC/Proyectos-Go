@@ -52,6 +52,7 @@ func DeleteLibro(w http.ResponseWriter,r *http.Request){
 	w.WriteHeader(http.StatusOK)
 	w.Write(res)
 }
+//TODO: UpdateLibro 
 
 func UpdateLibro(w http.ResponseWriter,r *http.Request){
 	var updateLibro = &models.Libro{}
@@ -78,3 +79,8 @@ func UpdateLibro(w http.ResponseWriter,r *http.Request){
 	w.WriteHeader(http.StatusOK)
 	w.Write(res)
 }
+
+//NOTE: .Marshal() convierte un objeto en un JSON 
+
+
+
