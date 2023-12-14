@@ -19,6 +19,7 @@ func printCommandEvents(analyticsChannel <-chan *slacker.CommandEvent) {
 		fmt.Println()
 	}
 }
+//NOTE: analyticsChannel es un canal que recibe eventos de comandos
 func main() {
 	os.Setenv("SLACK_BOT_TOKEN","xoxb-5474558710455-6349869728673-fbWgVXwdkHmxs9mLaBgu0KTo")
 	os.Setenv("SLACK_APP_TOKEN","xapp-1-A06AKUUV5UY-6340273777092-a13dd2b1a11e7ec683f3ec1cf507dec93e469300c568c51e2b785c52f258c03c")
@@ -42,9 +43,20 @@ func main() {
 
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
+	
+	//NOTE: WithContext() sirve para crear un contexto con un valor especifico
+	//NOTE: Listen() es un metodo que recibe un contexto y un error 
 
 	err := bot.Listen(ctx)
 	if err != nil {
 		log.Fatal(err)
 	}
 }
+
+//NOTE: Reply() sirve para responder al usuario que hizo la peticion 
+
+
+
+
+
+
