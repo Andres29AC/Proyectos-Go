@@ -30,3 +30,14 @@ func OpenCollection(mongoClient *mongo.Client, collectionName string) *mongo.Col
 	var collection *mongo.Collection = client.Database("restaurant").Collection(collectionName)
 	return collection
 }
+
+//NOTE: *mongo.Collection sirve para interactuar con la colección de la base de datos
+//NOTE: *mongo.Client sirve para interactuar con la base de datos 
+
+
+
+
+
+
+
+
