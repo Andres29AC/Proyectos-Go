@@ -19,4 +19,5 @@ type Dish struct {
 
 
 //NOTE: omitempty sirve para que no se muestre el campo si no tiene valor
+//NOTE: bson sirve para que mongo sepa que campo es
 
