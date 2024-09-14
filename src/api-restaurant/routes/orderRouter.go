@@ -1,13 +1,13 @@
 package routes 
 
 import(
-	controller "Andres29AC/Proyectos-Go/src/api-restaurant/controllers"
+	controllers "github.com/Andres29AC/Proyectos-Go/src/api-restaurant/controllers"
 	"github.com/gin-gonic/gin"
 )
 
 func OrderRoutes(incomingRoutes *gin.Engine){
-	incomingRoutes.GET("/orders", controller.GetOrders())
-	incomingRoutes.GET("/orders/:order_id", controller.GetOrder())
-	incomingRoutes.POST("/orders", controller.CreateOrder())
-	incomingRoutes.PATCH("/orders/:order_id", controller.UpdateOrder())
+	incomingRoutes.GET("/orders", controllers.GetOrders())
+	incomingRoutes.GET("/orders/:order_id", controllers.GetOrder())
+	incomingRoutes.POST("/orders", controllers.CreateOrder())
+	incomingRoutes.PATCH("/orders/:order_id", controllers.UpdateOrder())
 }

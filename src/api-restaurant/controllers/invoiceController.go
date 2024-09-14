@@ -13,7 +13,7 @@ func GetInvoices() gin.HandlerFunc {
 }
 
 func GetInvoice() gin.HandlerFunc {
-   return func(c *gin.Context) {}
+   return func(c *gin.Context) {
    }
 }
 

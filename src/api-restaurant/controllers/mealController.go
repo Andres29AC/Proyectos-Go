@@ -18,12 +18,12 @@ func CreateMeal() gin.HandlerFunc {
 
 	}
 }
-func round(num float64) int {
+// func round(num float64) int {
 
-}
-func toFixed(num float64, precision int) float64 {
+// }
+// func toFixed(num float64, precision int) float64 {
 
-}
+// }
 
 func UpdateMeal() gin.HandlerFunc {
 	return func(c *gin.Context) {

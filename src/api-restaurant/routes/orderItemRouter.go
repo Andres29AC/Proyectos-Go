@@ -1,14 +1,14 @@
 package routes 
 
-import(
-	controller "Andres29AC/Proyectos-Go/src/api-restaurant/controllers"
-	"github.com/gin-gonic/gin"
-)
+// import(
+// 	controllers "github.com/Andres29AC/Proyectos-Go/src/api-restaurant/controllers"
+// 	"github.com/gin-gonic/gin"
+// )
 
-func OrderItemRoutes(incomingRoutes *gin.Engine){
-	incomingRoutes.GET("/orderItems", controller.GetOrderItems())
-	incomingRoutes.GET("/orderItems/:orderItem_id", controller.GetOrderItem())
-	incomingRoutes.GET("/orderItems-order/:order_id", controller.GetOrderItemsByOrder())
-	incomingRoutes.POST("/orderItems", controller.CreateOrderItem())
-	incomingRoutes.PATCH("/orderItems/:orderItem_id", controller.UpdateOrderItem())
-}
+// func OrderItemRoutes(incomingRoutes *gin.Engine){
+// 	incomingRoutes.GET("/orderItems", controllers.GetOrderItems())
+// 	incomingRoutes.GET("/orderItems/:orderItem_id", controllers.GetOrderItem())
+// 	incomingRoutes.GET("/orderItems-order/:order_id", controllers.GetOrderItemsByOrder())
+// 	incomingRoutes.POST("/orderItems", controllers.CreateOrderItem())
+// 	incomingRoutes.PATCH("/orderItems/:orderItem_id", controllers.UpdateOrderItem())
+// }
