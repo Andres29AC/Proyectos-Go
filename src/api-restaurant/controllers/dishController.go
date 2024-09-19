@@ -20,7 +20,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 var dishCollection *mongo.Collection = database.OpenCollection(database.Client, "dish")
-var mealCollection *mongo.Collection = database.OpenCollection(database.Client, "meal")
+//var mealCollection *mongo.Collection = database.OpenCollection(database.Client, "meal")
 var validate = validator.New()
 
 func GetDishes() gin.HandlerFunc {

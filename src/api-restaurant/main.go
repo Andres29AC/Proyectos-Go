@@ -22,7 +22,7 @@ func main() {
     //NOTE: Usando la base de datos
 	router := gin.New()
 	router.Use(gin.Logger())
-	//routes.UserRoutes(router)
+	routes.UserRoutes(router)
 	router.Use(middleware.Authentication())
 
 	routes.MealRoutes(router)
