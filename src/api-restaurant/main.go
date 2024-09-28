@@ -29,7 +29,7 @@ func main() {
 	routes.DishRoutes(router)
 	routes.TableRoutes(router)
 	routes.OrderRoutes(router)
-	//routes.OrderItemRoutes(router)
+	routes.OrderItemRoutes(router)
 	routes.InvoiceRoutes(router)
 
 	router.Run(":" + port)
